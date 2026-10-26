@@ -1,6 +1,8 @@
 #!/bin/bash
+# Step 5: quantify transcript abundance for each sample against the index with Salmon.
+# Written for the UPR HPC cluster (SLURM); paths are from the original run.
 #SBATCH --job-name=david_salmon
-#SBATCH --mail-user=david.ortiz11@upr.edu
+#SBATCH --mail-user=YOUR_EMAIL
 #SBATCH --mail-type=ALL
 #SBATCH --workdir=/work/humberto/dortiz/salmon/
 #SBATCH --error=/work/humberto/dortiz/quant.e

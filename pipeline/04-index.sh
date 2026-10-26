@@ -1,6 +1,8 @@
 #!/bin/bash
+# Step 4: build a Salmon 0.8.2 quasi-mapping index (k=21) from the Trinity assembly.
+# Written for the UPR HPC cluster (SLURM); paths are from the original run.
 #SBATCH --job-name=david_salmon
-#SBATCH --mail-user=david.ortiz11@upr.edu
+#SBATCH --mail-user=YOUR_EMAIL
 #SBATCH --mail-type=ALL
 #SBATCH --workdir=/work/humberto/dortiz/salmon/
 #SBATCH --error=/work/humberto/dortiz/tools/salmon.e

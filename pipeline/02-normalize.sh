@@ -1,6 +1,8 @@
 #!/bin/bash
+# Step 2: digital normalization of the trimmed reads with khmer (normalize-by-median, k=20, C=20).
+# Written for the UPR HPC cluster (SLURM); paths are from the original run.
 #SBATCH --job-name=david_norm
-#SBATCH --mail-user=david.ortiz11@upr.edu
+#SBATCH --mail-user=YOUR_EMAIL
 #SBATCH --mail-type=ALL
 #SBATCH --workdir=/work/humberto/dortiz/trimmed
 #SBATCH --error=/work/humberto/dortiz/trimmed/normalize.e
