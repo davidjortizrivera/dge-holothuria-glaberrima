@@ -1,6 +1,8 @@
 #!/bin/bash
+# Step 3: de novo transcriptome assembly of the normalized reads with Trinity 2.4.0 (single-end).
+# Written for the UPR HPC cluster (SLURM); paths are from the original run.
 #SBATCH --job-name=david_trinity
-#SBATCH --mail-user=david.ortiz11@upr.edu
+#SBATCH --mail-user=YOUR_EMAIL
 #SBATCH --mail-type=ALL
 #SBATCH --workdir=/work/humberto/dortiz/trinity/
 #SBATCH --error=/work/humberto/dortiz/tools/trin.e

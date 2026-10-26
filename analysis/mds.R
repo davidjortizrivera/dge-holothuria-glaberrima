@@ -1,3 +1,5 @@
+# MDS plot of the 8 Illumina samples (Day 2, Day 12, Day 20, uninjured) using edgeR.
+
 library(methods)
 library(Biobase)
 library(biomaRt)

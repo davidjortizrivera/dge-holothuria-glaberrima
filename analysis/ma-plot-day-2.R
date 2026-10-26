@@ -1,3 +1,5 @@
+# MA plot, Day 2 post-injury vs uninjured, edgeR exact test (red: FDR < 0.2).
+
 library(methods)
 library(Biobase)
 library(biomaRt)

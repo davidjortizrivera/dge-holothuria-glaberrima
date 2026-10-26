@@ -1,4 +1,6 @@
 #!/bin/bash
+# Step 1: trim adapters and low-quality bases from the 12 single-end reads with Trimmomatic 0.36.
+# Ran on a lab workstation; paths are from the original run.
 export PATH=$PATH:/home/david/Trimmomatic-0.36 ;
 java -jar /home/david/Trimmomatic-0.36/trimmomatic-0.36.jar SE -threads 8 /data/david/pepino/fastq/SRR490649.fastq SRR490649_trimmed.fastq ILLUMINACLIP:/home/david/Trimmomatic-0.36/adapters/TruSeq3-SE.fa:2:30:10 LEADING:20 TRAILING:24 SLIDINGWINDOW:4:4 MINLEN:26 ;
 java -jar /home/david/Trimmomatic-0.36/trimmomatic-0.36.jar SE -threads 8 /data/david/pepino/fastq/SRR490669.fastq SRR490669_trimmed.fastq ILLUMINACLIP:/home/david/Trimmomatic-0.36/adapters/TruSeq3-SE.fa:2:30:10 LEADING:20 TRAILING:24 SLIDINGWINDOW:4:4 MINLEN:26 ;
